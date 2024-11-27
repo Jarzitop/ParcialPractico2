@@ -27,4 +27,6 @@ export class Anime {
     this.studio= studio,
     this.img = img;
   }
+
+  
  }

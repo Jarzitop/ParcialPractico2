@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AnimeListComponent } from './anime/anime-list/anime-list.component';
+import {AnimeDetailComponent} from './anime/anime-detail/anime-detail.component'; 
 
 const routes: Routes = [];
 
@@ -7,4 +9,11 @@ const routes: Routes = [];
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+
+export class AppRoutingModule   { 
+
+  routes: Routes = [
+    { path: 'anime/:id', component: AnimeListComponent }
+  ];
+  
+ }

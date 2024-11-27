@@ -16,6 +16,7 @@
         <dt class="bold">Number of episodes</dt>
         <dd class="caption">{{ animeDetail.episode }}</dd>
         <hr />
+        <button class="btn btn-primary" (click)="onSelected()">Back</button>
 
       </dl>
     </div>
@@ -26,6 +27,7 @@
           src="{{ animeDetail.img }}"
           alt="{{ animeDetail.name }}"
         />
+
       </div>
     </div>
   </div>

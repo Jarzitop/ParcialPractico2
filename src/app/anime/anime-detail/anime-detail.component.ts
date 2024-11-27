@@ -7,12 +7,16 @@ import { Anime } from '../anime';
   styleUrls: ['./anime-detail.component.css']
 })
 export class AnimeDetailComponent implements OnInit {
+onSelected() {
+throw new Error('Method not implemented.');
+}
 
   @Input() animeDetail!: Anime;
 
   constructor() { }
 
   ngOnInit() {
+    
   }
 
 

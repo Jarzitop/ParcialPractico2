@@ -1,3 +1,12 @@
+  
+<div class="card" style="width: 70rem;">
+  <img src="anime2.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+
+  </div>
+</div>
+
+
   <br>
   <div class="container contenedor-animes">
   <div class="row">
@@ -10,7 +19,9 @@
         <p>{{anime.name}}</p>
         <img src={{anime.img}}  alt="anime image" width=50px>
         <p>⭐{{anime.Rating}} <b>Categories: </b>{{anime.categorie}}</p>
-        <a href="#" (click)="onSelected(anime)">More information</a>
+        <button href="#" (click)="onSelected(anime)"> More Information</button>
+        
+        
         <hr>
    </div>
 

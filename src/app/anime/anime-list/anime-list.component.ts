@@ -19,11 +19,14 @@ export class AnimeListComponent implements OnInit {
       this.animes = animes;
     });
   }
+  
+  
 
   onSelected(anime: Anime): void {
     this.selected = true;
     this.selectedBAnime = anime;
   }
+  
 
   ngOnInit() {
     this.getAnimes();
